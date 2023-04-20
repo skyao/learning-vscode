@@ -84,5 +84,24 @@ VS Code 不包括传统的 文件 > 新项目 对话框或预装的项目模板�
 文件夹的位置会因你的平台不同而不同。
 
 - Windows - 删除 `%APPDATA%Code` 和 `%USERPROFILE%\.vscode`。
+
 - macOS - 删除 `$HOME/Library/Application Support/Code` 和 `~/.vscode`。
+
+  如果要完全清理，最好删除以下内容：
+
+  ```bash
+  rm -fr ~/Library/Preferences/com.microsoft.VSCode.helper.plist 
+  rm -fr ~/Library/Preferences/com.microsoft.VSCode.plist 
+  rm -fr ~/Library/Caches/com.microsoft.VSCode
+  rm -fr ~/Library/Caches/com.microsoft.VSCode.ShipIt/
+  rm -fr ~/Library/Application\ Support/Code/
+  rm -fr ~/Library/Saved\ Application\ State/com.microsoft.VSCode.savedState/
+  rm -fr ~/.vscode/
+  ```
+
 - Linux - 删除 `$HOME/.config/Code` 和 `~/.vscode`。
+
+
+
+
+
