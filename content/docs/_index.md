@@ -1,5 +1,5 @@
 ---
-title: "VS Code学习笔记"
+title: "Visual Studio Code学习笔记"
 linkTitle: "学习笔记"
 weight: 1
 date: 2022-11-3
